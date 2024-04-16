@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.jpg" CLASS="icon">
+    <link rel="stylesheet" href="bookstyle.css">
+    <title>BOOK A TABLE</title>
+</head>
+<body>
+    <marquee> BOOK A TABLE TO GET EXCITING OFFER!!!!!</marquee>
+    <section class="banner">
+        <h2> BOOK YOUR TABLE NOW!!!</h2>
+        <div class="card-container">
+        <div class ="card-img">
+     </div>
+
+        <div class="card-content">
+            <h3> RESERVATION</h3>
+            <form> 
+                <div class="form-row">
+                    <select name="days">
+                        <option value="day-select"> Select day</option>
+                        <option value="sunday"> Sunday</option>
+                        <option value="monday"> Monday</option>
+                        <option value="tuesday"> Tuesday</option>
+                        <option value="wednesday"> Wednesday</option>
+                        <option value="thursday"> Thursday</option>
+                        <option value="friday"> Friday</option>
+                        <option value="saturday"> Saturday</option>
+                        </select>
+                        <select name="time">
+                            <option value="time">
+                                Time
+                            </option>
+                            <option value="1:00">1:00</option>
+                         </select>
+                        
+                </div>
+                <div class="form-row">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" placeholder="Phone Number" required>
+                </div>
+                <div class="form-row">
+                    <input type="number" placeholder="Number of people" min="1" max="10" required>
+                </div>
+                <div class="container">
+                    <button type="submit" class="btn" onclick="openPopup()" >Submit</button>
+                    <div class="popup" id="popup">
+                        <img src="tick.png">
+                        <h2>Thank You!</h2>
+                        <p>Your details has been submitted</p>
+                        <a href="http://127.0.0.1:5500/index.html"><button type="button" onclick="closePopup()">OK</button></a>
+                    </div>
+                  </div>
+            </form>
+        </div>
+        </div>
+       </section>
+ <script>
+       let popup = document.getElementById("popup");
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    } 
+ </script>
+</body>
+</html>
