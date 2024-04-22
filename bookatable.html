@@ -18,7 +18,7 @@
 
         <div class="card-content">
             <h3> RESERVATION</h3>
-            <form> 
+            <form action="login.php" method="post"> 
                 <div class="form-row">
                     <select name="days">
                         <option value="day-select"> Select day</option>
@@ -55,25 +55,12 @@
                 </div>
                 <div class="container">
                     <a href="https://desh-aaditya.github.io/resturant/"><button type="submit" class="btn" onclick="openPopup()" >Submit</button></a>
-                    <div class="popup" id="popup">
-                        <img src="tick.png">
-                        <h2>Thank You!</h2>
-                        <p>Your details has been submitted</p>
-                        <a href="https://desh-aaditya.github.io/resturant/"><button type="button" onclick="closePopup()">OK</button></a>
                     </div>
                   </div>
             </form>
         </div>
         </div>
        </section>
- <script>
-       let popup = document.getElementById("popup");
-    function openPopup(){
-        popup.classList.add("open-popup");
-    }
-    function closePopup(){
-        popup.classList.remove("open-popup");
-    } 
- </script>
+
 </body>
 </html>
